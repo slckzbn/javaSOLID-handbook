@@ -27,28 +27,53 @@ public class pnlSingleResponsibility extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        lblSingleResponsibilityHeader = new javax.swing.JLabel();
+        txtaSRP = new javax.swing.JScrollPane();
+        txtaSingleResponsibilityPrinciple = new javax.swing.JTextArea();
+        lblImg = new javax.swing.JLabel();
 
-        jLabel1.setText("jLabel1");
+        lblSingleResponsibilityHeader.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblSingleResponsibilityHeader.setText("Tek Sorumluluk Prensibi (Single Responsibility Principle)");
+
+        txtaSingleResponsibilityPrinciple.setColumns(20);
+        txtaSingleResponsibilityPrinciple.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtaSingleResponsibilityPrinciple.setRows(5);
+        txtaSingleResponsibilityPrinciple.setText("Bir sınıfın veya modülün sadece tek bir sorumluluğu yerine getirmesini amaçlayan prensiptir.\nBağımlılık (Cohesion) en aza indirgenmesi amaçlanmaktadır.");
+        txtaSingleResponsibilityPrinciple.setToolTipText("");
+        txtaSingleResponsibilityPrinciple.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtaSingleResponsibilityPrinciple.setEnabled(false);
+        txtaSRP.setViewportView(txtaSingleResponsibilityPrinciple);
+        txtaSingleResponsibilityPrinciple.getAccessibleContext().setAccessibleParent(this);
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/SingleResponsibilityPrinciple.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(txtaSRP)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 366, Short.MAX_VALUE))
+                .addComponent(lblSingleResponsibilityHeader)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(lblImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 286, Short.MAX_VALUE))
+                .addComponent(lblSingleResponsibilityHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtaSRP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImg)
+                .addGap(0, 220, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JLabel lblSingleResponsibilityHeader;
+    private javax.swing.JScrollPane txtaSRP;
+    private javax.swing.JTextArea txtaSingleResponsibilityPrinciple;
     // End of variables declaration//GEN-END:variables
 }
