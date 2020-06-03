@@ -27,19 +27,50 @@ public class pnlLiskovSubstitution extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblImg = new javax.swing.JLabel();
+        txtaSRP1 = new javax.swing.JScrollPane();
+        txtaLiskovSubstitutionPrinciple = new javax.swing.JTextArea();
+        lblLiskovSubstitutionHeader = new javax.swing.JLabel();
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/LiskovSubstitutionPrinciple.png"))); // NOI18N
+
+        txtaLiskovSubstitutionPrinciple.setColumns(20);
+        txtaLiskovSubstitutionPrinciple.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtaLiskovSubstitutionPrinciple.setRows(5);
+        txtaLiskovSubstitutionPrinciple.setText("Open/Closed prensibine benzerdir.\nÜst sınıfta yazılan fonksiyonlar alt sınıfların kullanabileceği şekilde yazılır.\nUpcast işlemi yaparak üst sınıftaki fonksiyonlar çağırılır ve yene özelliklerle kullanılır.");
+        txtaLiskovSubstitutionPrinciple.setToolTipText("");
+        txtaLiskovSubstitutionPrinciple.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtaLiskovSubstitutionPrinciple.setEnabled(false);
+        txtaSRP1.setViewportView(txtaLiskovSubstitutionPrinciple);
+
+        lblLiskovSubstitutionHeader.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblLiskovSubstitutionHeader.setText("LiskovYerine Geçme Prensibi(Liskov Substitution Principle)");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(lblLiskovSubstitutionHeader)
+            .addComponent(lblImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtaSRP1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblLiskovSubstitutionHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtaSRP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImg)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JLabel lblLiskovSubstitutionHeader;
+    private javax.swing.JTextArea txtaLiskovSubstitutionPrinciple;
+    private javax.swing.JScrollPane txtaSRP1;
     // End of variables declaration//GEN-END:variables
 }

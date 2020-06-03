@@ -27,19 +27,50 @@ public class pnlDependencyInversion extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblImg = new javax.swing.JLabel();
+        txtaSRP1 = new javax.swing.JScrollPane();
+        txtaDependencyInversionPrinciple = new javax.swing.JTextArea();
+        lblDependencyInversionHeader = new javax.swing.JLabel();
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/DependencyInversionPrinciple.PNG"))); // NOI18N
+
+        txtaDependencyInversionPrinciple.setColumns(20);
+        txtaDependencyInversionPrinciple.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtaDependencyInversionPrinciple.setRows(5);
+        txtaDependencyInversionPrinciple.setText("Alt seviyedeki sınıflarda olan değişiklikler üst seviyedeki sınıfları etkilememesini amaçlayan prensiptir.\nÇözüm olarak yüksek seviyeli sınıflar ve düşük seviyeli sınıflar arasında arayüz kullanılmalıdır.");
+        txtaDependencyInversionPrinciple.setToolTipText("");
+        txtaDependencyInversionPrinciple.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtaDependencyInversionPrinciple.setEnabled(false);
+        txtaSRP1.setViewportView(txtaDependencyInversionPrinciple);
+
+        lblDependencyInversionHeader.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblDependencyInversionHeader.setText("Bağımlılığı Ters Çevirme Prensibi(Dependency Inversion Principle)");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(lblDependencyInversionHeader)
+            .addComponent(lblImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtaSRP1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblDependencyInversionHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtaSRP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImg)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblDependencyInversionHeader;
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JTextArea txtaDependencyInversionPrinciple;
+    private javax.swing.JScrollPane txtaSRP1;
     // End of variables declaration//GEN-END:variables
 }

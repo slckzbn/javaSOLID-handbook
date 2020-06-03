@@ -27,19 +27,50 @@ public class pnlInterfaceSegregation extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblInterfaceSegregationHeader = new javax.swing.JLabel();
+        txtaSRP1 = new javax.swing.JScrollPane();
+        txtaInterfaceSegregationPrinciple = new javax.swing.JTextArea();
+        lblImg = new javax.swing.JLabel();
+
+        lblInterfaceSegregationHeader.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblInterfaceSegregationHeader.setText("Arayüz Ayırma Prensibi(Interface Segregation Principle)");
+
+        txtaInterfaceSegregationPrinciple.setColumns(20);
+        txtaInterfaceSegregationPrinciple.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtaInterfaceSegregationPrinciple.setRows(5);
+        txtaInterfaceSegregationPrinciple.setText("İhtiyaç duyulmayan metotların bulunduğu interfacelere sınıfların bağımlı olmamasını amaçlar.\nÇözüm olarak interface parçalanır.\nInterfaceler istemciye göre yazılmalıdır.");
+        txtaInterfaceSegregationPrinciple.setToolTipText("");
+        txtaInterfaceSegregationPrinciple.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtaInterfaceSegregationPrinciple.setEnabled(false);
+        txtaSRP1.setViewportView(txtaInterfaceSegregationPrinciple);
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/Interface-SegregationPrinciple.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(lblInterfaceSegregationHeader)
+            .addComponent(lblImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtaSRP1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblInterfaceSegregationHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtaSRP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImg)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JLabel lblInterfaceSegregationHeader;
+    private javax.swing.JTextArea txtaInterfaceSegregationPrinciple;
+    private javax.swing.JScrollPane txtaSRP1;
     // End of variables declaration//GEN-END:variables
 }

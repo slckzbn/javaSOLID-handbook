@@ -27,19 +27,52 @@ public class pnlOpenClosed extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblOpenClosedHeader = new javax.swing.JLabel();
+        txtaSRP1 = new javax.swing.JScrollPane();
+        txtaOpenClosedPrinciple = new javax.swing.JTextArea();
+        lblImg = new javax.swing.JLabel();
+
+        setPreferredSize(new java.awt.Dimension(778, 725));
+
+        lblOpenClosedHeader.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        lblOpenClosedHeader.setText("Açık/Kapalı Prensibi (OpenClosed Principle)");
+
+        txtaOpenClosedPrinciple.setColumns(20);
+        txtaOpenClosedPrinciple.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        txtaOpenClosedPrinciple.setRows(5);
+        txtaOpenClosedPrinciple.setText("Bir sınıfın veya modülün esnek bir yapıda olmasını amaçlayan prensiptir.\nInterface ve abstrack sınıf kullanılarak kırılganlık kaldırılabilir.\nAlt sınıflarda ise üst sınıfı ezerek özelleştirme yapılır.");
+        txtaOpenClosedPrinciple.setToolTipText("");
+        txtaOpenClosedPrinciple.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtaOpenClosedPrinciple.setEnabled(false);
+        txtaSRP1.setViewportView(txtaOpenClosedPrinciple);
+
+        lblImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgs/OpenClosedPrinciple.PNG"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(lblOpenClosedHeader)
+            .addComponent(lblImg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(txtaSRP1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(lblOpenClosedHeader)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(txtaSRP1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblImg)
+                .addGap(0, 352, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblImg;
+    private javax.swing.JLabel lblOpenClosedHeader;
+    private javax.swing.JTextArea txtaOpenClosedPrinciple;
+    private javax.swing.JScrollPane txtaSRP1;
     // End of variables declaration//GEN-END:variables
 }

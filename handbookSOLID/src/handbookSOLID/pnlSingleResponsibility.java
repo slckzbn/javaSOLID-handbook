@@ -65,7 +65,7 @@ public class pnlSingleResponsibility extends javax.swing.JPanel {
                 .addComponent(txtaSRP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblImg)
-                .addGap(0, 220, Short.MAX_VALUE))
+                .addGap(0, 169, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
